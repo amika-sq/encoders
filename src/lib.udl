@@ -1,0 +1,9 @@
+namespace encoders {
+  string base64_encode(bytes input);
+  
+  [Throws=Base64DecodeError]
+  bytes base_64_decode(string input);
+};
+
+[Error]
+interface Base64DecodeError {};
